@@ -57,7 +57,7 @@ public class JournalApp extends Application {
         String accentColor = currentConfig.getAccent();
 
         Color originalBgColor = Color.web(bgColor);
-        Color originalAccentColor = Color.web(bgColor);
+        Color originalAccentColor = Color.web(accentColor);
 
         String lighterBgHex = originalBgColor.brighter().toString().replace("0x", "#");
         String darkerAccentHex = originalAccentColor.darker().toString().replace("0x", "#");
